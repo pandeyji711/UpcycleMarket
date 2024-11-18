@@ -1,0 +1,201 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin-top: 70px; 
+    padding: 0;
+    background-color: #f3f2ef;
+}
+
+h3, h4 {
+    margin: 0;
+}
+
+i {
+    color: rgb(248, 167, 26);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+}
+
+/* header {
+    background-color: white;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+} */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-search {
+    display: flex;
+    align-items: center;
+    margin-right: 150px;
+}
+
+.logo {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.search-bar {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.nav-icons span{
+    display: flex;
+    color: black;
+}
+
+.nav-icons button {
+    font-size: medium;
+    background: none;
+    border: none;
+    margin-left: 20px;
+    cursor: pointer;
+    color: rgb(248, 167, 26);
+}
+
+.nav-icons a{
+    text-decoration: none;
+}
+
+/* Main Layout */
+.main-container {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Left Sidebar */
+.sidebar-left {
+    width: 20%;
+    margin-left: 2%;
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 70px; /* Below the navbar */
+    left: 0;
+    height: calc(100vh - 70px); /* Full height minus navbar */
+    overflow-y: auto;
+}
+
+.profile-card {
+    text-align: center;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 80px;
+}
+
+.stats p {
+    margin: 10px 0;
+}
+
+
+.links a {
+    display: block;
+    margin: 5px 0;
+    color: black;
+    text-decoration: none;
+}
+
+/* Feed */
+.feed {
+    width: 50%;
+    margin-left: 25%; /* Match the width of the left sidebar */
+    margin-right: 20%; /* Match the width of the right sidebar */
+    overflow-y: auto;
+}
+
+.post-box {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.post-box input {
+    width: 97%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.post-options button {
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    margin: 10px 5px;
+    color: black;
+    cursor: pointer;
+}
+
+.post {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.post-user h4 {
+    justify-content: left;
+    margin: 0;
+}
+
+.post-content {
+    margin: 15px 0;
+}
+
+.post-img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.post-actions button {
+    background: none;
+    border: none;
+    margin-right: 10px;
+    cursor: pointer;
+    color: black;
+}
+
+/* Right Sidebar */
+.sidebar-right {
+    width: 20%;
+    margin-right: 2%;
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 70px; /* Below the navbar */
+    right: 0;
+    height: calc(100vh - 70px); /* Full height minus navbar */
+    overflow-y: auto;
+}
