@@ -71,3 +71,29 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+    const navButtons = document.querySelectorAll('.nav-btn');
+
+    // Check the current URL to set the active button
+    const currentPage = window.location.pathname;
+    navButtons.forEach(button => {
+        const link = button.querySelector('a');
+        if (link && link.getAttribute('href') === currentPage) {
+            button.classList.add('active');
+        } else {
+            button.classList.remove('active');
+        }
+    });
+
+    // Update active button on click
+    navButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            navButtons.forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+        });
+    });
+});
+
+
+
+
