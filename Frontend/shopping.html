@@ -12,17 +12,27 @@
     <!-- Navbar -->
     <header>
         <div class="navbar">
-            <div class="logo-search">
-                <img src="https://via.placeholder.com/40x40?text=UM" alt="Logo" class="logo">
-                <input type="text" placeholder="Search" class="search-bar">
+            <div class="logo">
+                <img src="https://via.placeholder.com/40x40?text=UM" alt="Logo">
             </div>
             <div class="nav-icons">
-                <button><i class="fas fa-home"></i><span> <a href="index.html">Home</a></span></button>
-                <button><i class="fa-solid fa-video"></i><span> <a href="videos.html">Videos</a></span></button>
-                <button><i class="fa-solid fa-shop"></i><span> <a href="shopping.html">Shopping</a></span></button>
-                <button><i class="fas fa-envelope"></i><span> <a href="msg.html">Messaging</a></span></button>
-                <button><i class="fas fa-bell"></i><span> <a href="noti.html">Notifications</a></span></button>
-                <button class="profile-btn"><i class="fas fa-user-circle"></i><span> Login/SignUp</span></button>
+                <button id="home-btn" class="nav-btn active"><i class="fas fa-home"></i><span> <a href="index.html">Home</a></span></button>
+                <button id="videos-btn" class="nav-btn"><i class="fa-solid fa-video"></i><span> <a href="videos.html">Videos</a></span></button>
+                <button id="search-btn" class="nav-btn"><i class="fas fa-search"></i><span> Search</span></button>
+                <button id="shopping-btn" class="nav-btn"><i class="fa-solid fa-shop"></i><span> <a href="shopping.html">Shopping</a></span></button>
+                <button id="notifications-btn" class="nav-btn"><i class="fas fa-bell"></i><span> <a href="noti.html">Notifications</a></span></button>
+                <button id="profile-btn" class="nav-btn profile-btn"><i class="fas fa-user-circle"></i><span> Login/SignUp</span></button>
+            </div>
+        </div>
+
+        <!-- Search Bar Popup -->
+        <div id="search-popup" class="search-popup hidden">
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Type to search...">
+                <button id="ask-ai-btn">Ask AI</button>
+            </div>
+            <div id="suggestions" class="suggestions">
+                <!-- Suggestions will populate here -->
             </div>
         </div>
     </header>
@@ -30,7 +40,7 @@
     <main>
         <div class="main-container">
             <!-- Left Sidebar -->
-            <aside class="sidebar-left">
+            <!-- <aside class="sidebar-left">
                 <div class="cart-info">
                     <h3><i class="fa-solid fa-cart-shopping"></i> My Cart</h3>
                     <p>Total Items: <span>3</span></p>
@@ -43,7 +53,7 @@
                     <a href="#"><i class="fa-solid fa-heart"></i> Wishlist</a><br>
                     <a href="#"><i class="fa-solid fa-history"></i> Order History</a><br>
                 </div>
-            </aside>
+            </aside> -->
 
             <!-- Feed Section -->
             <section class="feed">
@@ -85,7 +95,7 @@
             </section>
 
             <!-- Right Sidebar -->
-            <aside class="sidebar-right">
+            <!-- <aside class="sidebar-right">
                 <div class="trending">
                     <h3>Popular Products</h3>
                     <ul>
@@ -103,7 +113,7 @@
                         <li>Discounted Eco-Friendly Paint</li>
                     </ul>
                 </div>
-            </aside>
+            </aside> -->
         </div>
     </main>
 

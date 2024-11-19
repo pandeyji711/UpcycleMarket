@@ -1,11 +1,5 @@
 /* General Styles */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: Arial, sans-serif;
     margin-top: 70px; 
@@ -32,34 +26,19 @@ header {
     padding: 10px 20px;
 }
 
-/* header {
-    background-color: white;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
-    padding: 10px 20px;
-} */
-
 .navbar {
     display: flex;
     align-items: center;
-    justify-content: center;
-}
-
-.logo-search {
-    display: flex;
-    align-items: center;
-    margin-right: 150px;
+    padding: 5px 10px;
+    margin-left: 25%;
+    margin-right: 25%;
+    justify-content: space-between;
 }
 
 .logo {
-    height: 40px;
-    margin-right: 10px;
-}
-
-.search-bar {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 300px;
+    flex-shrink: 0; /* Prevents the logo from shrinking */
+    display: flex;
+    align-items: left;
 }
 
 .nav-icons span{
@@ -67,17 +46,120 @@ header {
     color: black;
 }
 
-.nav-icons button {
-    font-size: medium;
+/* Navbar Button Styling */
+.nav-btn {
+    position: relative;
     background: none;
     border: none;
-    margin-left: 20px;
     cursor: pointer;
-    color: rgb(248, 167, 26) ;
+    font-size: medium;
+    color: rgb(248, 167, 26);
+    margin-left: 20px;
+    padding-bottom: 5px; /* To give space for the color bar */
 }
 
-.nav-icons a{
+.nav-btn:hover {
+    color: #ff9900;
+}
+
+/* Add color bar for the active button */
+.nav-btn.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: rgb(248, 167, 26); /* Color of the bar */
+    border-radius: 2px;
+}
+
+.nav-icons a {
     text-decoration: none;
+    color: black;
+}
+
+.nav-icons a:visited {
+    color: black; 
+}
+
+.nav-icons a:hover {
+    color: black; 
+}
+
+.nav-icons a:active {
+    color: black; 
+}
+
+/* Search Popup Styling */
+.search-popup {
+    position: fixed;
+    top: 70px; /* Below the navbar */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 45%;
+    background: white;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    z-index: 1000;
+}
+
+.search-popup.hidden {
+    display: none;
+}
+
+/* Container for Input and Button */
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Input Field */
+#search-input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Ask AI Button */
+#ask-ai-btn {
+    padding: 8px 15px;
+    border: none;
+    background-color: rgb(248, 167, 26);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#ask-ai-btn:hover {
+    background-color: #ff9900;
+}
+
+/* Suggestions Styling */
+.suggestions {
+    margin-top: 10px;
+    max-height: 150px;
+    overflow-y: auto;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    background: #f9f9f9;
+    border-radius: 5px;
+}
+
+.suggestions div {
+    padding: 8px;
+    background: #ffffff;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.suggestions div:hover {
+    background: #ececec;
 }
 
 /* Main Layout */
@@ -88,7 +170,7 @@ header {
 }
 
 /* Left Sidebar */
-.sidebar-left {
+/* .sidebar-left {
     margin-left: 2%;
     background-color: white;
     padding: 15px;
@@ -127,13 +209,13 @@ header {
 
 .links a:hover {
     color: #0073b1;
-}
+} */
 
 /* Feed */
 .feed {
     width: 50%;
-    margin-left: 25%; /* Match the width of the left sidebar */
-    margin-right: 20%; /* Match the width of the right sidebar */
+    margin-left: 25%; 
+    margin-right: 20%; 
     overflow-y: auto;
 }
 
@@ -203,7 +285,7 @@ header {
 
 
 /* Right Sidebar */
-.sidebar-right {
+/* .sidebar-right {
     margin-right: 2%;
     background-color: white;
     padding: 15px;
@@ -235,10 +317,10 @@ header {
 .trending ul li:hover {
     color: #0073b1;
     cursor: pointer;
-}
+} */
 
 /* Scrollbars */
-.sidebar-left, .sidebar-right {
+/* .sidebar-left, .sidebar-right {
     scrollbar-width: thin;
     scrollbar-color: #aaa #f4f4f4;
 }
@@ -252,4 +334,5 @@ header {
 .sidebar-right::-webkit-scrollbar-thumb {
     background-color: #aaa;
     border-radius: 4px;
-}
+} */
+ 
