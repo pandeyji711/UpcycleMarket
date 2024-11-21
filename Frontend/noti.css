@@ -11,7 +11,11 @@ h3, h4 {
 }
 
 i {
+<<<<<<< HEAD
     color: #0077b5;
+=======
+    color: rgb(4, 144, 30);
+>>>>>>> f2749c171560e6ca00cb8f178d749b53e49830f0
 }
 
 header {
@@ -52,7 +56,7 @@ header {
     border: none;
     cursor: pointer;
     font-size: medium;
-    color: rgb(248, 167, 26);
+    color:  rgb(4, 144, 30);
     margin-left: 20px;
     padding-bottom: 5px; /* To give space for the color bar */
 }
@@ -69,7 +73,7 @@ header {
     left: 0;
     right: 0;
     height: 3px;
-    background-color: rgb(248, 167, 26); /* Color of the bar */
+    background-color: rgb(4, 144, 30);/* Color of the bar */
     border-radius: 2px;
 }
 
@@ -127,7 +131,7 @@ header {
 #ask-ai-btn {
     padding: 8px 15px;
     border: none;
-    background-color: rgb(248, 167, 26);
+    background-color:  rgb(4, 144, 30);
     color: white;
     border-radius: 5px;
     cursor: pointer;
