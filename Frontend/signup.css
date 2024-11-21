@@ -1,37 +1,30 @@
-body {  font-family: "Arial", sans-serif;
-  margin: 0;
-  padding: 0;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f3f3;
+  margin: 1px;
+  padding: 1px;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #f3f2ef;
 }
 
 .container {
   background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   overflow: hidden;
   max-width: 400px;
   width: 100%;
 }
 
-.login-box {
+.registration-box {
   text-align: center;
   padding: 20px;
 }
 
-h1 {
+h2 {
   color: #0077b5;
-  margin-bottom: 20px;
-  margin-top: 0px;
-}
-
-img {
-  width: 165px;
-  height: 150px;
-  margin-bottom: 0px;
 }
 
 form {
@@ -41,19 +34,23 @@ form {
 
 label {
   font-weight: bold;
-  margin-bottom: 5px;
+  margin-bottom: 2px;
+  color: #333;
 }
 
-input {
+input,
+select {
   padding: 10px;
   margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 button {
   background-color: #0077b5;
-  color: white; /* Set text color inside button to white */
+  color: #fff;
   padding: 10px;
   border: none;
   border-radius: 4px;
@@ -61,22 +58,11 @@ button {
 }
 
 button:hover {
-  background-color: #37b7fc;
-}
-
-button a {
-  color: inherit; /* Ensure the link inside the button inherits the white color */
-  text-decoration: none; /* Remove underline if needed */
-}
-
-
-p {
-  margin-top: 15px;
-  font-size: 14px;
+  background-color: #5bc1f8;
 }
 
 a {
-  color: #0077b5;
+  color: white;
   text-decoration: none;
 }
 

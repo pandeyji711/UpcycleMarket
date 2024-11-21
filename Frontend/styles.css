@@ -11,7 +11,11 @@ h3, h4 {
 }
 
 i {
-    color: rgb(248, 167, 26);
+    color: #0077b5;
+}
+
+a{
+    text-decoration: none;
 }
 
 header {
@@ -286,6 +290,71 @@ header {
     cursor: pointer;
     color: black;
 }
+
+/* Comment box */
+.comment-box {
+    position: static; /* Ensure it follows the normal document flow */
+    margin-top: 10px; /* Add spacing between the post and the comment box */
+    width: 97%; /* Make it adapt to the post's width */
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    z-index: 100; /* Maintain layering if needed */
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+/* Hide the comment box by default */
+.comment-box.hidden {
+    display: none;
+}
+
+/* Comments container */
+.comments {
+    flex-grow: 1;
+    margin-bottom: 10px;
+}
+
+/* Individual comment */
+.comments p {
+    margin: 5px 0;
+    padding: 8px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Add comment section */
+.add-comment {
+    display: flex;
+    align-items: center;
+}
+
+.add-comment input {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.add-comment button {
+    background-color: #4a6cf7;
+    color: white;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-comment button:hover {
+    background-color: #374cb3;
+}
+
 
 /* Right Sidebar */
 /* .sidebar-right {
